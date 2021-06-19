@@ -1,5 +1,5 @@
 ### --------------------------------------------------------------------------------------------------------
-# K-Means Clustering – Private vs. Public Universities
+# K-Means Clustering - Private vs. Public Universities
 ### --------------------------------------------------------------------------------------------------------
 ### K-Means Clustering:
 - an **algorithm**:
