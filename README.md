@@ -20,7 +20,6 @@
             - Re-calculate each cluster centroid
         - Repeat steps 3.2.1 and 3.2.2 until within cluster variation cannot be reduced -> repeat until reach convergence
             - within cluster variation is calculated as the sum of the Euclidean distance between the data points (observations) in the cluster and their respective cluster centroids
-
 - how to **choose a K value**: 
     - **K is the number of clusters** -> no easy way to choose a “best” K value
     - use the **Elbow method to choose a K value**:
@@ -55,3 +54,55 @@ The College dataset contains the following columns:
 - **perc.alumni** - Pct. alumni who donate
 - **Expend** - Instructional expenditure per student
 - **Grad.Rate** - Graduation rate
+
+### --------------------------------------------------------------------------------------------------------
+### Table of Contents:
+1. File Descriptions
+2. Technologies Used
+3. Structure of Notebook
+4. Executive Summary
+
+#### 1. File Descriptions
+- K-Means Clustering - Private_vs._Public_Universities.ipynb
+- College_Data.csv
+- README.md
+
+#### 2. Technologies Used
+- Python
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+
+#### 3. Structure of Notebook
+1. Import the Libraries
+2. Load the Data
+3. Exploratory Data Analysis
+    - 3.1 Check out the Data
+    - 3.2 Data Visualization
+4. Data Preprocessing and Feature Engineering
+    - 4.1 Identify the variables
+    - 4.2 Dealing with the Non-numerical features
+    - 4.3 Dealing with Outliers
+    - 4.4 Cleaning the data
+    - 4.5 Standardize (Scale) the values of variables
+5. Create the K-Means Clustering model
+    - 5.1 Create the K-Means Clustering model
+    - 5.2 Choose the best K value
+    - 5.3 Fit the K-Means Clustering model
+    - 5.4 Plotting of clustered data
+    - 5.5 Evaluate the model
+        - 5.5.1 Classification report
+	    - 5.5.2 Confusion matrix
+    - 5.6 GridSearchCV
+        - 5.6.1 Create the Grid of parameters
+	    - 5.6.2 Create the GridSearchCV model (Re-create the K-Means Clustering model)
+	    - 5.6.3 Train / fit the GridSearchCV model (Re-train / Re-fit the K-Means Clustering model)
+	    - 5.6.4 Predictions from the GridSearchCV model (Re-predictions from the K-Means Clustering model)
+	    - 5.6.5 Evaluate the GridSearchCV model (Re-evaluate the K-Means Clustering model)
+	        - 1. Classification report
+	        - 2. Confusion matrix
+
+#### 4. Executive Summary
+TBA
