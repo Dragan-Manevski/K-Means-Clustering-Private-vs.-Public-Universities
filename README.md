@@ -11,15 +11,15 @@
         - **to find structure in inputs by understanding hidden patterns** -> divide input data into distinct groups such that observations within each group are similar	
         - **to cluster unlabeled data based on their similarity** -> try to find patterns in the data, no outcome to be predicted
 - **how K-Means Clustering algorithm works**:
-    1. Choose a number of clusters (K) -> specify in how many clusters want to group the data or expect or want to explore
-    2. Randomly assign each data point (observation) to a specific cluster
-    3. Until clusters stop changing (no new clusters), repeat (iterate) the following steps:
-        - 3.1 Calculate each cluster centroid by taking the mean vector of points in the cluster
-        - 3.2 Iterate through these two steps:
-            - 3.2.1 Re-assign each data point (observation) to the cluster whose cluster centroid is closest, using distance metric
-            - 3.2.2 Re-calculate each cluster centroid
-        - 3.3 Repeat steps 3.2.1 and 3.2.2 until within cluster variation cannot be reduced -> repeat until reach convergence
-            - within cluster variation is calculated as the sum of the Euclidean distance between the data points (observations) in the cluster and their respective cluster centroids
+	1. Choose a number of clusters (K) -> specify in how many clusters want to group the data or expect or want to explore
+	2. Randomly assign each data point (observation) to a specific cluster
+	3. Until clusters stop changing (no new clusters), repeat (iterate) the following steps:
+		3.1 Calculate each cluster centroid by taking the mean vector of points in the cluster
+		3.2 Iterate through these two steps:
+			3.2.1 Re-assign each data point (observation) to the cluster whose cluster centroid is closest, using distance metric
+			3.2.2 Re-calculate each cluster centroid
+		3.3 Repeat steps 3.2.1 and 3.2.2 until within cluster variation cannot be reduced -> repeat until reach convergence
+			- within cluster variation is calculated as the sum of the Euclidean distance between the data points (observations) in the cluster and their respective cluster centroids
 - how to **choose a K value**: 
     - **K is the number of clusters** -> no easy way to choose a “best” K value
     - use the **Elbow method to choose a K value**:
