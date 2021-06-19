@@ -14,24 +14,21 @@
     1. Choose a number of clusters (K) -> specify in how many clusters want to group the data or expect or want to explore
     2. Randomly assign each data point (observation) to a specific cluster
     3. Until clusters stop changing (no new clusters), repeat (iterate) the following steps:
-    
-      3.1 Calculate each cluster centroid by taking the mean vector of points in the cluster
-      
-      3.2 Iterate through these two steps:
-        - Re-assign each data point (observation) to the cluster whose cluster centroid is closest, using distance metric
-        - Re-calculate each cluster centroid
-      
-      3.3 Repeat steps 3.2.1 and 3.2.2 until within cluster variation cannot be reduced -> repeat until reach convergence
-        - within cluster variation is calculated as the sum of the Euclidean distance between the data points (observations) in the cluster and their respective cluster centroids
+        - Calculate each cluster centroid by taking the mean vector of points in the cluster
+        - Iterate through these two steps:
+            - Re-assign each data point (observation) to the cluster whose cluster centroid is closest, using distance metric
+            - Re-calculate each cluster centroid
+        - Repeat steps 3.2.1 and 3.2.2 until within cluster variation cannot be reduced -> repeat until reach convergence
+            - within cluster variation is calculated as the sum of the Euclidean distance between the data points (observations) in the cluster and their respective cluster centroids
 
 - how to **choose a K value**: 
     - **K is the number of clusters** -> no easy way to choose a “best” K value
     - use the **Elbow method to choose a K value**:
-      1. Compute the Sum of Squared Error (SSE) for some values of K
-        - SSE is the sum of the squared distance between the data points (observations) in the cluster and their respective cluster centroids
-      2. Choose the K value at which the SSE decreases abruptly
-        - SSE decreases as K value gets larger
-        - when K value increases, clusters are smaller and distortion is also smaller
+        - Compute the Sum of Squared Error (SSE) for some values of K
+            - SSE is the sum of the squared distance between the data points (observations) in the cluster and their respective cluster centroids
+        - Choose the K value at which the SSE decreases abruptly
+            - SSE decreases as K value gets larger
+            - when K value increases, clusters are smaller and distortion is also smaller
 
 ### --------------------------------------------------------------------------------------------------------
 ### Project Objective: Clustering Universities into Private or Public
