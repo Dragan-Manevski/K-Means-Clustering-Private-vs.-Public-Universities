@@ -1,6 +1,6 @@
-### --------------------------------------------------------------------------------------------------------
+### -------------------------------------------------------------------------------------------------------
 # K-Means Clustering - Private vs. Public Universities
-### --------------------------------------------------------------------------------------------------------
+### -------------------------------------------------------------------------------------------------------
 ### K-Means Clustering:
 - an **algorithm**:
     - based on **Unsupervised Learning**
@@ -29,7 +29,7 @@
             - SSE decreases as K value gets larger
             - when K value increases, clusters are smaller and distortion is also smaller
 
-### --------------------------------------------------------------------------------------------------------
+### -------------------------------------------------------------------------------------------------------
 ### Project Objective: Clustering Universities into Private or Public
 Create a model that allows to put in a few features of Universities and clusters them into two groups, Private and Public. Information about the children who have had corrective spine surgery is in the dataset 'College_Data'. The College dataset has 777 rows and 18 columns.
 
@@ -55,7 +55,7 @@ The College dataset contains the following columns:
 - **Expend** - Instructional expenditure per student
 - **Grad.Rate** - Graduation rate
 
-### --------------------------------------------------------------------------------------------------------
+### -------------------------------------------------------------------------------------------------------
 ### Table of Contents:
 1. File Descriptions
 2. Technologies Used
